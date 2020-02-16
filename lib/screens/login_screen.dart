@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 
 class LoginScreen extends StatefulWidget {
+
+  static const String id = 'login_screen';
+
   @override
   _LoginScreenState createState() => _LoginScreenState();
 }
@@ -26,6 +29,7 @@ class _LoginScreenState extends State<LoginScreen> {
             TextField(
               onChanged: (value) {
                 //Do something with the user input.
+
               },
               decoration: InputDecoration(
                 hintText: 'Enter your email',
