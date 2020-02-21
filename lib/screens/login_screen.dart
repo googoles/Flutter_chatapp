@@ -28,7 +28,7 @@ class _LoginScreenState extends State<LoginScreen> {
     return ModalProgressHUD(
       inAsyncCall: showSpinner,
       child: Scaffold(
-        resizeToAvoidBottomPadding: false,
+//        resizeToAvoidBottomPadding: false,
         backgroundColor: Colors.white,
         body: Padding(
           padding: EdgeInsets.symmetric(horizontal: 24.0),
@@ -36,11 +36,13 @@ class _LoginScreenState extends State<LoginScreen> {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
-              Hero(
-                tag: 'logo',
-                child: Container(
-                  height: 200.0,
-                  child: Image.asset('images/logo.png'),
+              Flexible(
+                child: Hero(
+                  tag: 'logo',
+                  child: Container(
+                    height: 200.0,
+                    child: Image.asset('images/logo.png'),
+                  ),
                 ),
               ),
               SizedBox(
