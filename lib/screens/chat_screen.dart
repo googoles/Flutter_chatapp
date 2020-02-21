@@ -51,7 +51,7 @@ class _ChatScreenState extends State<ChatScreen> {
                 Navigator.pop(context);
               }),
         ],
-        title: Text('⚡️Chat'),
+        title: Text('채팅채팅'),
         backgroundColor: Colors.lightBlueAccent,
       ),
       body: SafeArea(
